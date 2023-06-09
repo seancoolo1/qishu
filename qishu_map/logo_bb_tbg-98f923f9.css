@@ -1,0 +1,135 @@
+.ngfcDialog{
+    left:50%;
+    top:50%;
+    border:1px solid rgba(255,255,255,.3);
+    border-radius:20px
+    }
+
+.ngfcDialogBackdrop{
+    backdrop-filter:blur(11.5px)
+}
+
+.ngfcDialogBackgroundSafari{
+    background:rgba(22,22,22,.92)
+}
+
+.ngfcDialogBackgroundNormal{
+    background:rgba(22,22,22,.82)
+}
+
+#ngfcDialogContainer{
+    position:absolute;width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0
+}
+
+.ngfcDialogContainerBg{
+    background-color:#0009
+}
+
+.ngfcInputDesk,.ngfcInputMobile{
+    font-weight:500
+}
+
+.ngfcInput{
+    font-weight:500;
+    line-height:170%;
+    letter-spacing:-.04em;
+    width:100%;outline:none;
+    caret-color:#0cffd4;
+    background:linear-gradient(270deg,#86FFEA 5.88%,#0CFFD4 91.18%),#333333;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+    text-fill-color:transparent;
+}
+
+.ngfcInput::placeholder{
+    background:linear-gradient(225deg,#5DC9A8 0%,#44BBAC 100%);
+    font-weight:500;
+    line-height:170%;
+    letter-spacing:-.04em;-webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+    text-fill-color:transparent
+}
+
+.exampleColor,.loading{
+    color:#bdbdbd
+}
+
+#NG_CityForm_Input::-webkit-contacts-auto-fill-button,#NG_CityForm_Input::-webkit-credentials-auto-fill-button{
+    visibility:hidden;
+    display:none!important;
+    pointer-events:none;
+    height:0;
+    width:0;
+    margin:0
+}
+
+.ngSuggestionText{font-weight:500;line-height:170%;letter-spacing:-.04em;color:#bdbdbd}.arrowUpRight{color:#bdbdbd}.ngcSubtext{font-weight:500;line-height:170%;letter-spacing:-.04em;color:#828282}.ngfDialog{left:50%;top:50%;border:1px solid rgba(255,255,255,.3);border-radius:20px}.moveTopUpSpecific{-webkit-transform:translate(-50%,-130px)}.transformBoth{-webkit-transform:translate(-50%,-50%)}.ngfDialogBackdrop{backdrop-filter:blur(11.5px)}.ngfDialogBackgroundSafari{background:rgba(22,22,22,.92)}.ngfDialogBackgroundNormal{background:rgba(22,22,22,.82)}#ngfDialogContainer{position:absolute;top:0;left:0;right:0;bottom:0;width:100%;height:100%}.ngfDialogContainerBg{background-color:#0009}.ngfInputDesk,.ngfInputMobile{font-weight:500}
+
+.ngInputContainer{background:#090909;
+    border-radius:10px
+}
+
+.ngfInput{font-weight:500;
+    line-height:170%;letter-spacing:-.04em;
+    width:100%;outline:none;
+    caret-color:#0cffd4;
+    background:linear-gradient(270deg,#86FFEA 5.88%,#0CFFD4 91.18%),#333333;
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+    background-clip:text;
+    text-fill-color:transparent
+}
+
+.ngfInput::placeholder{background:linear-gradient(225deg,#5DC9A8 0%,#44BBAC 100%);
+    font-weight:500;
+    line-height:170%;
+    letter-spacing:-.04em;-webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;background-clip:text;text-fill-color:transparent
+}
+
+.generateButtonInactive{
+    background:linear-gradient(270deg,rgba(134,255,234,.26) 5.88%,rgba(12,255,212,.26) 91.18%);
+    opacity:.6
+}
+
+.generateButtonGeneral{
+    border-radius:8px;white-space:nowrap;right:10px
+}
+
+.generateButtonTextInactive{
+    background:linear-gradient(270deg,#86FFEA 5.88%,#0CFFD4 91.18%),#333333;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+    text-fill-color:transparent}.conciergeRectGeneral{
+    position:relative;left:10px
+}
+
+.generateButtonTextGeneral{
+    font-weight:800;
+    line-height:100%;
+    letter-spacing:-.04em
+}
+
+.generateButtonActive{
+    background:linear-gradient(270deg,rgba(134,255,234,.26) 5.88%,rgba(12,255,212,.26) 91.18%)
+}
+
+.generateButtonActiveTextDesk,.generateButtonActiveTextMobile{
+    background:linear-gradient(270deg,#86FFEA 5.88%,#0CFFD4 91.18%),#333333;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;background-clip:text;
+    text-fill-color:transparent
+}
+
+.generateButtonTextDesk,generateButtonTextMobile{color:#fff}.tripnotesConciergeDesk,.tripnotesConciergeMobile{
+    font-weight:900;letter-spacing:-.05em;color:#fff
+}
+
+.examplePrompts{font-weight:500;line-height:170%;letter-spacing:.17em}.exampleColor{color:#bdbdbd}.generatingNote{font-weight:500;line-height:170%;letter-spacing:-.04em;color:#bdbdbd}input[type=text]::-webkit-contacts-auto-fill-button,input[type=text]::-webkit-credentials-auto-fill-button{visibility:hidden;display:none!important;pointer-events:none;height:0;width:0;margin:0}.blankNote{font-weight:400;line-height:170%;text-align:center;letter-spacing:-.04em;color:#828282}#NGF_Input::-webkit-input-placeholder{transition:opacity .5s ease-in}#NGF_Input::-moz-placeholder{transition:opacity .5s ease-in}#NGF_Input::-ms-input-placeholder{transition:opacity .5s ease-in}#NGF_Input::placeholder{transition:opacity .5s ease-in}.fade::-webkit-input-placeholder{opacity:0}.fade::-moz-placeholder{opacity:0}.fade::-ms-input-placeholder{opacity:0}.fade::placeholder{opacity:0}#NGF_Input::-webkit-contacts-auto-fill-button,#NGF_Input::-webkit-autofill,#NGF_Input::autofill,#NGF_Input::-webkit-credentials-auto-fill-button{visibility:hidden;display:none!important;pointer-events:none;height:0;width:0;margin:0}.formsContainerFullScreenPosition,.formsContainerInAppNewNotePosition{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.appDesc{font-weight:500;line-height:170%;letter-spacing:-.05em;color:#bdbdbd;left:50%;-webkit-transform:translate(-50%,-50%)}.loginText{font-weight:700;line-height:125%;letter-spacing:-.813333px}.previewButton{background:radial-gradient(77.78% 70.93% at 9.26% 68.52%,rgba(51,255,219,.14) 0%,rgba(150,131,252,.14) 100%),rgba(255,255,255,.16);border-radius:5px}.previewText{background:radial-gradient(77.78% 70.93% at 9.26% 68.52%,#33FFDB 0%,#9683FC 100%),linear-gradient(0deg,#8179E0,#8179E0),#4F4F4F;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-fill-color:transparent}.joinWaitlistButton{background:linear-gradient(85.55deg,rgba(86,221,227,.5) 24.11%,rgba(149,164,242,.5) 80.94%);border-radius:38.6333px}.joinWaitlistText{font-weight:700;font-size:14.6667px;line-height:125%;letter-spacing:-.813333px;color:#fff}.tmDialog{background:#333333;border-radius:32px;border-color:#0cffd4;left:50%;top:50%;-webkit-transform:translate(-50%,-50%)}.mainTextDesk{font-weight:900;font-size:70px;line-height:80px;overflow:visible;background:linear-gradient(247.7deg,#97ECDD 10.26%,#0CFFD4 79.97%),#97ECDD;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-fill-color:transparent}.mainTextMobile{font-weight:900;font-size:45px;overflow:visible;background:linear-gradient(247.7deg,#97ECDD 10.26%,#0CFFD4 79.97%),#97ECDD;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-fill-color:transparent}.subText,.inWaitlist{font-weight:700;font-size:16px;color:#f8f8f6}.joinWaitListButton{background:linear-gradient(270deg,#86FFEA 5.88%,#0CFFD4 91.18%),linear-gradient(225deg,#5DC9A8 0%,#44BBAC 100%);border-radius:69.4642px}.joinWaitListButtonTextDesk{font-weight:700;line-height:160%;letter-spacing:-.02em;color:#333}.joinWaitListButtonTextMobile{font-weight:700;line-height:160%;letter-spacing:-.02em;text-align:center;color:#333}.alreadyText{font-weight:500;font-size:14px;line-height:21px;letter-spacing:-.04em;color:#fff}.logInText{font-weight:500;font-size:14px;line-height:21px;letter-spacing:-.04em;color:#0cffd4}.arrow{color:#0cffd4}.tmInputDesk{border-radius:70px;font-weight:500;font-size:16px}.tmInputMobile{border-radius:70px;font-weight:500;font-size:16px;line-height:160%;letter-spacing:-.02em}.tmInputDesk::placeholder,tmInputMobile::placeholder{color:#bdbdbd}#tmDialogContainer{position:fixed;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:#0009}.thankYouTextMobile{font-weight:900;font-size:45px;overflow:visible;background:linear-gradient(247.7deg,#97ECDD 10.26%,#0CFFD4 79.97%),#97ECDD;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-fill-color:transparent}.thankYouTextDesk{font-weight:900;font-size:60px;line-height:80px;overflow:visible;background:linear-gradient(247.7deg,#97ECDD 10.26%,#0CFFD4 79.97%),#97ECDD;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-fill-color:transparent}.subTextMobile,.subTextDesk{font-weight:700;font-size:16px;color:#f8f8f6}.tmtDialog{background:#333333;border-radius:32px;border-color:#0cffd4;left:50%;top:50%;-webkit-transform:translate(-50%,-50%)}#tmtDialogContainer{position:fixed;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:#0009}.closeText{font-weight:500;font-size:16px;line-height:21px;letter-spacing:-.04em;color:#0cffd4}.previewBar{background:linear-gradient(0deg,#333333,#333333),#FFFFFF;border:.5px solid rgba(74,74,74,.12)}.previewBarBaseText{font-weight:400;line-height:170%;letter-spacing:-.05em;color:#fff}.previewBarFeatureText,.learnMoreButtonText{font-weight:600;line-height:16px;display:flex;align-items:flex-end;text-align:center;letter-spacing:-.06em;background:radial-gradient(77.78% 70.93% at 9.26% 68.52%,#33FFDB 0%,#9683FC 100%),linear-gradient(0deg,#8179E0,#8179E0),#4F4F4F;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-fill-color:transparent}.learnMoreButton{background:radial-gradient(77.78% 70.93% at 9.26% 68.52%,rgba(51,255,219,.14) 0%,rgba(150,131,252,.14) 100%),rgba(255,255,255,.16);border-radius:5px}.loginText{font-weight:700;line-height:125%;text-align:center;letter-spacing:-.813333px;color:#bdbdbd}

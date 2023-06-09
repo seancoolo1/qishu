@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>槭树测试</title>
+    <link rel="stylesheet" href="https://cache.amap.com/lbs/static/main1119.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-5jJiIYzFzU4J8UWZVWzLcNjxqH8RwTg2z1Nj6UO9qgJ6JmO6L7Qs9jQvVJrJyJl8L6zjO1yqRwCfP9yxOyR0Rw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=7605c22a92d73c47eedd9134937a8455&plugin=AMap.Autocomplete,AMap.PlaceSearch"></script>
+    <link rel="manifest" href="https://tripnotes.ai/manifest.json">
+    <link href="./qishu_map/brands.min.css" rel="stylesheet">
+    <link href="./qishu_map/sharp-solid.min.css" rel="stylesheet">
+    <link href="./qishu_map/brands.min.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=explicit" async="" defer=""></script>
+    <script type="module" crossorigin="" src="./qishu_map/index-83733fe7.js.下载"></script>
+    <link rel="stylesheet" href="./qishu_map/index-59ecdab4.css">
+    <link rel="modulepreload" as="script" crossorigin="" href="https://tripnotes.ai/assets/index-e684ca70.js">
+    <link rel="stylesheet" href="./qishu_map/index-4b007a6f.css">
+    <style type="text/css">
+		[mt_node=trans_loading]::after{
+		content: '';
+		vertical-align: middle !important;
+		width: 1em !important;
+		height: 1em !important;
+		display: inline-block !important;
+		margin: 0 4px !important;
+		border: 2px rgba(0, 0, 0, 0.25) solid !important;
+		border-top: 2px rgba(0, 0, 0, 1) solid !important;
+		border-radius: 50% !important;
+		padding: 0 !important;
+		-webkit-animation: immersive-translate-loading-animation 0.6s infinite linear !important;
+		animation: immersive-translate-loading-animation 0.6s infinite linear !important;
+		}
+
+		@keyframes immersive-translate-loading-animation {
+			from {
+				transform: rotate(0deg,0deg,0deg);
+			}
+			to {
+				transform: rotate(359deg,0deg,0deg);
+			}
+		}
+	</style>
+    	<style type="text/css">[mt_node^=trans]{display: none !important;}</style>
+        <style type="text/css">.resize-observer[data-v-8859cc6c]{position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;border:none;background-color:transparent;pointer-events:none;display:block;overflow:hidden;opacity:0}.resize-observer[data-v-8859cc6c] object{display:block;position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden;pointer-events:none;z-index:-1}</style><style type="text/css">x-vue-echarts{display:block;width:100%;height:100%}</style>
+        <link rel="modulepreload" as="script" crossorigin="" href="https://tripnotes.ai/assets/index-b14e9069.js">
+        <link rel="modulepreload" as="script" crossorigin="" href="./qishu_map/index-83733fe7.js.下载">
+        <link rel="modulepreload" as="script" crossorigin="" href="https://tripnotes.ai/assets/scale-control-860e7756.js">
+        <link rel="modulepreload" as="script" crossorigin="" href="https://tripnotes.ai/assets/constants-e8c19b4b.js">
+        <link rel="modulepreload" as="script" crossorigin="" href="https://tripnotes.ai/assets/logo_bb_tbg-e122f66a.js">
+        <link rel="modulepreload" as="script" crossorigin="" href="https://tripnotes.ai/assets/index-2e4736b8.js">
+        <link rel="stylesheet" href="./qishu_map/logo_bb_tbg-98f923f9.css">
+        <link rel="stylesheet" href="./qishu_map/index-d3a01634.css">
+        <link rel="modulepreload" as="script" crossorigin="" href="https://tripnotes.ai/assets/mapbox-gl-53bbaa45.js">
+        <script src="./qishu_map/js.js" async=""></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-jxNQ6N5QxLQy1m+8z2xTQZbU3sZvIu0b1R0u7F3wWxuGkz6oOJ7DQ3j7G+XsDfYfL6zvZ/8QF3L9d6Wm7JbqBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script>
+            document.getElementById("next-button").addEventListener("click", function(){
+              document.querySelector(".search-container").style.display = "none";
+              document.querySelector(".demand-container").style.display = "block";
+            });
+            </script>
+        <script>
+            document.getElementById("generate-button").addEventListener("click", function(){
+              console.log(document.getElementById("NGF_Input").value);
+            });
+            </script>
+</head>
+<body>
+<div id="container"></div>
+
+<!--搜索框-->
+<div class="absolute formsContainerFullScreenPosition">
+    <div id="ngfcDialogContainer" class="z-max search-container">
+        <div class="ngfcDialog ba bw1 absolute flex flex-column items-start pb3 ph2 f ngfcDialogBackdrop ngfcDialogBackgroundNormal transformBoth" style="width: 90vw; height: auto;">
+            <div class="relative w-100 ngInputContainer flex items-center mt2 pv2">
+                <img class="conciergeRectGeneral" src="./qishu_map/concierge_in_input-1dc8c7a4.svg" alt="Concierge Rect">
+                <input class="ngfcInput f4 b--transparent w-90 ngfcInputMobile " placeholder="去哪?" type="text" id="NG_CityForm_Input" value="" style="padding-left: 15px; margin-right: 15px;" id="tipinput">
+                    <div class="pointer generateButtonGeneral generateButtonTextGeneral ph3 pv2 relative generateButtonInactive" id="next-button">
+                        <span class="generateButtonTextInactive">下一步</span>
+                    </div>
+            </div>
+        <div class="flex flex-column mt2 w-100 overflow-scroll" style="max-height: 300px;">
+        </div>
+        <div class="mt3 w-100">
+            <div class="pa3 nt3 nb3 nr3 flex items-center f6 w4-5 pointer">
+                <i class="fa-regular fa-chevron-up exampleColor"></i>
+                <div class="examplePrompts exampleColor ml2 ttu f7">输入目的地，例如下面城市</div>
+            </div>
+            <div class="mt3">
+                <div class="pl3 pr4 mv2 f4">
+                    <div class="flex items-center justify-between w-100 pointer dim">
+                        <div class="flex items-center"><div class="ngSuggestionText">上海/SHANGHAI</div>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right arrowUpRight"></i>
+                </div>
+            </div>
+            <div class="pl3 pr4 mv2 f4"><div class="flex items-center justify-between w-100 pointer dim">
+                <div class="flex items-center"><div class="ngSuggestionText">三亚/SANYA</div>
+            </div>
+            <i class="fa-solid fa-arrow-up-right arrowUpRight"></i>
+        </div>
+    </div>
+    <div class="pl3 pr4 mv2 f4">
+        <div class="flex items-center justify-between w-100 pointer dim">
+            <div class="flex items-center">
+                <div class="ngSuggestionText">武汉/WUHAN</div>
+            </div><i class="fa-solid fa-arrow-up-right arrowUpRight"></i>
+        </div>
+    </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!--需求框-->
+<div class="absolute formsContainerFullScreenPosition" style="display: none;">
+    <div id="ngfDialogContainer" class="z-max demand-container">
+        <div class="ngfDialog ba bw1 absolute flex flex-column items-start pb3 ph2 f ngfDialogBackdrop ngfDialogBackgroundNormal transformBoth" style="width: 90vw; height: auto;">
+            <div class="relative w-100 ngInputContainer flex items-center mt2 pv2">
+                <img class="conciergeRectGeneral" src="./qishu_map/concierge_in_input-1dc8c7a4.svg" alt="Concierge Rect">
+                <input class="ngfInput f4 b--transparent w-90 ngfInputMobile  fade" autocomplete="off" placeholder="试试:排名前5的咖啡馆..." type="text" id="NGF_Input" value="" style="padding-left: 15px; margin-right: 15px;">
+                <div class="pointer generateButtonGeneral generateButtonTextGeneral ph3 pv2 relative generateButtonInactive" id="generate-button">
+                    <span class="generateButtonTextInactive">生成</span>
+                </div>
+            </div>
+            <div class="mt3 w-100"><div class="pa3 flex items-center f6 pointer nt3 nb3 nr3 w4-5">
+                <div class="flex items-center">
+                    <i class="fa-regular fa-chevron-up exampleColor"></i>
+                    <div class="examplePrompts exampleColor ml2 pointer ttu f7">需求关键词</div>
+                </div>
+            </div>
+            <div class="mt3">
+                <div class="pl3 pr4 mv2 f4">
+                    <div class="flex items-center justify-between w-100 pointer dim">
+                        <div class="flex items-center">
+                            <div class="ngSuggestionText">给我安排个周末计划</div>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right arrowUpRight"></i>
+                    </div>
+                </div>
+                <div class="pl3 pr4 mv2 f4">
+                    <div class="flex items-center justify-between w-100 pointer dim">
+                        <div class="flex items-center">
+                            <div class="ngSuggestionText">我想在这里消磨一整天</div>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right arrowUpRight"></i>
+                    </div>
+                </div>
+                <div class="pl3 pr4 mv2 f4">
+                    <div class="flex items-center justify-between w-100 pointer dim">
+                        <div class="flex items-center">
+                            <div class="ngSuggestionText">5个适合约会的餐厅</div>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right arrowUpRight"></i>
+                    </div>
+                </div>
+                <div class="pl3 pr4 mv2 f4">
+                    <div class="flex items-center justify-between w-100 pointer dim">
+                        <div class="flex items-center">
+                            <div class="ngSuggestionText">给我一个3天2夜的行程安排</div>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right arrowUpRight"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--地图项-->
+<script type="text/javascript">//地图加载
+        var map = new AMap.Map("container", {
+        resizeEnable: true,//是否监控地图容器尺寸变化
+        mapStyle: 'amap://styles/fresh', //设置地图的显示样式
+        zoom: 1, //初始地图级别
+    });
+    //输入提示
+    var autoOptions = {
+        input: "tipinput"
+    };
+    var auto = new AMap.Autocomplete(autoOptions);
+    var placeSearch = new AMap.PlaceSearch({
+        map: map
+    });  //构造地点查询类
+    AMap.event.addListener(auto, "select", select);//注册监听，当选中某条记录时会触发
+    function select(e) {
+        placeSearch.setCity(e.poi.adcode);
+        placeSearch.search(e.poi.name);  //关键字查询查询
+    }
+</script>
+</body>
+</html>
